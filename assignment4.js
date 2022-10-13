@@ -95,3 +95,12 @@ function combineArrays(array1, array2){
 // into an array, use arrays methods, and turn the array back into
 // a string. This is also a challenge on freeCodeCamp. Check the
 // help forums there if you get stuck!
+
+function isPalindrome(str){
+    let re = /[\W_]/g; //found a regular expression to take out special characters
+    let newStr = str.toLowerCase().replace(re, '');
+    let revStr = newStr.split('').reverse().join(''); 
+
+    return newStr === revStr;
+}
+
